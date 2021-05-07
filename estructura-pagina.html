@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+</head>
+<body>
+
+    <style>
+
+       /* diseño para mas de 1024 px*/
+        header {
+            background-color: aqua;
+            min-height: 10vh;
+        }
+
+        nav{
+            background-color: pink;
+            min-height: 10vh;
+        }
+
+        .content {
+            display: flex;    
+        }
+
+        main {
+            background-color: rebeccapurple;
+            min-height: 70vh;
+            float: left;
+        }
+
+        aside {
+            min-height: 70vh;
+            width: 30%;
+            background-color: rgba(49, 155, 105, 0.705);
+            /* color hexadecimal, usar inspector de codigo de Chrome #319b69b4 */
+        }
+
+        footer  {
+            min-height: 10vh;
+            background-color: grey;
+        }
+
+        /* diseño para tablets */
+        @media screen and ( max-width: 768px ){
+            main {                       
+                width: 50%;            
+            }
+
+            aside {
+                width: 50%;            
+            }
+
+        }
+
+        /* diseño para movil  */
+        @media screen and ( max-width: 425px ){
+            main {                       
+                width: 100%;            
+            }
+
+            aside {
+                width: 100%;            
+            }
+
+        }
+
+
+    </style>
+
+    <header>
+        HEADER
+    </header>
+
+    <nav>
+        BARRA DE NAVEGACION
+    </nav>
+
+    <div class="content">
+        <main>
+            CONTENIDO PRINCIPAL
+        </main>
+
+        <aside>
+            SIDEBAR
+        </aside>
+    </div>    
+
+    <footer>
+        PIEDE DE PAGINA
+    </footer>
+        
+    
+</body>
+</html>
