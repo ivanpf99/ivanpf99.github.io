@@ -1,0 +1,17 @@
+.btn-block {
+    width: 100%;
+    display: block;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    margin-bottom: 1.5rem !important;
+}
+
+form {
+    margin: auto; /* centra en horizontal */
+}
+
+footer {
+    position: absolute;  /* poscionar el pie abajo del todo */
+    bottom: 0;
+}
